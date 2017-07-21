@@ -1,0 +1,14 @@
+.form-container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.include-borders {
+	border-left: 1px solid #ccc!important;
+	border-right: 1px solid #ccc!important;
+	border-radius: 3px!important;
+}
+
+.no-border td {
+	border-top: none;
+}

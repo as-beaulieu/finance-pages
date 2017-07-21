@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9 no-focus" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Advisor Settings</title>
+
+        <meta name="description" content="Advisor Settings">
+        <meta name="author" content="">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="assets/img/favicons/favicon-192x192.png" sizes="192x192">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
+
+        <!-- Bootstrap and OneUI CSS framework -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available Classes:
+
+            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+            'sidebar-l'                  Left Sidebar and right Side Overlay
+            'sidebar-r'                  Right Sidebar and left Side Overlay
+            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+            'sidebar-o'                  Visible Sidebar by default (> 991px)
+            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+            'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+            'header-navbar-fixed'        Enables fixed header
+        -->
+        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+            
+
+            <!-- LEFT Sidebar -->
+            <nav id="sidebar">
+                <!-- Sidebar Scroll Container -->
+                <div id="sidebar-scroll">
+                    <!-- Sidebar Content -->
+                    <!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+                    <div class="sidebar-content">
+                        <!-- Side Header -->
+                        <div class="side-header side-content bg-white">
+                            <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                            <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times"></i>
+                            </button>
+                            
+                            <a class="h5 text-Black">
+                                <img src="#" style="width: 100%;">
+                            </a>
+                        </div>
+                        <!-- END Side Header -->
+
+                        <!-- LEFT Side INDEX Content -->
+                        <div class="side-content">
+                            <ul class="nav-main">
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">General</span></li>
+                                 <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_dashboard.html"><span class="btn">Dashboard</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle=" base_tables_styles.html" href="advisor_dashboard_clients.html"><span class="btn">Clients</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_invoices.html"><span class="btn">Invoices</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_plans.html"><span class="btn">Plans</span></a>
+                                </li>
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">Transactions</span></li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_transfers.html"><span class="btn">Transfers</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisors_payments.html"><span class="btn">Payments</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_settings.html"><span class="btn">Reports</span></a>
+                                </li>
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">Account</span></li>
+                                <li>
+                                    <a class="active nav-submenu" data-toggle="base_tables_styles.html" href="#"><span class="btn">Settings</span></a>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_help.html"><span class="btn">Help</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END LEFT Side Content -->
+                    </div>
+                    <!-- Sidebar Content -->
+                </div>
+                <!-- END Sidebar Scroll Container -->
+            </nav>
+            <!-- END LEFT Sidebar -->
+
+            <!-- Header -->
+            <header id="header-navbar" class="content-mini content-mini-full">
+                <!-- Header Navigation Right -->
+                <ul class="nav-header pull-right">
+                    <li>
+                        
+                    </li>
+                </ul>
+                <!-- END Header Navigation Right -->
+
+                <!-- Header Navigation Left -->
+                <ul class="nav-header pull-left">
+                    <li class="hidden-md hidden-lg">
+                        <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                        <button class="btn btn-default" data-toggle="layout" data-action="sidebar_toggle" type="button">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+                        <!-- Layout API, functionality initialized in App() -> uiLayoutApi() -->
+                        <button class="btn btn-default" data-toggle="layout" data-action="sidebar_mini_toggle" type="button">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </li>
+                </ul>
+                <!-- END Header Navigation Left -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Header -->
+                <div class="content bg-image overflow-hidden" style="">
+                    <div class="push-5-t push-5">
+                        <h1 class="h2 text-black animated zoomIn">Settings</h1>
+                    </div>
+                </div>
+
+                <!-- END Page Header -->
+
+                <!-- Page Content -->
+                <div class="block">
+                    <div class="block-header">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <!-- Block Tabs Justified Default Style -->
+                                        <div class="block">
+                                            <ul class="nav nav-tabs nav-justified" data-toggle="tabs">
+                                                <li class="active">
+                                                    <a href="#btabs-static-justified-personal-info">Personal Info</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#btabs-static-justified-funding-sources">Funding Sources</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#btabs-static-justified-notifications">Notifications</a>
+                                                </li>
+                                            </ul>
+                                            <div class="block-content tab-content">
+                                                <div class="tab-pane active" id="btabs-static-justified-personal-info">
+                                                    <div class="container">
+                                                        <h4 class="block-header font-w300 push-15 bg-gray-lighter">Basic Info</h4>
+                                                            <div class="col-mid-2">
+                                                                <p><i class="si si-user-follow fa-5x"></i></p>
+                                                                
+                                                            </div>
+                                                            <!-- DropzoneJS -->
+                                                            <div class ="row">
+                                                                <div class="col-lg-6">
+                                                                    <h2 class="content-heading">Upload Logo</h2>
+                                                                    <div class="block">
+                                                                        <div class="block-content block-content-full">
+                                                                            <!-- DropzoneJS Container -->
+                                                                            <form class="dropzone" action="advisor_settings.html"> Drag and Drop image here</form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- END DropzoneJS -->
+                                                            <div class="block-content block-content-narrow">
+                                                            <form class="form-horizontal" action="#" method="post" onsubmit="return false;">
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label" for="example-maxlength1">First Name</label>
+                                                                    <div class="col-md-6">
+                                                                        <input class="js-maxlength form-control" type="text" id="example-maxlength1" name="example-maxlength1" maxlength="20" placeholder="Enter your First Name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label" for="example-maxlength2">Last Name</label>
+                                                                    <div class="col-md-6">
+                                                                        <input class="js-maxlength form-control" type="text" id="example-maxlength2" name="example-maxlength2" maxlength="20" placeholder="Enter Last Name" data-threshold="25">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label" for="example-maxlength3">Email</label>
+                                                                    <div class="col-md-6">
+                                                                        <input class="js-maxlength form-control" type="text" id="example-maxlength3" name="example-maxlength3" maxlength="30" placeholder="name@server.com" data-always-show="true">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-md-4 control-label" for="example-maxlength5">Company Name</label>
+                                                                    <div class="col-md-6">
+                                                                        <input class="js-maxlength form-control" type="text" id="example-maxlength5" name="example-maxlength5" maxlength="30" placeholder="Enter the name of your company" data-always-show="true" data-warning-class="label label-primary" data-limit-reached-class="label label-primary">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-8 col-md-offset-4">
+                                                                        <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="btabs-static-justified-funding-sources">
+                                                    <div class="container">
+                                                        <div class="col-md-9">
+                                                            <!-- Block Tabs Justified Alternative Style -->
+                                                            <div class="block">
+                                                                <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs">
+                                                                    <li class="active">
+                                                                        <a href="#btabs-alt-static-justified-current"></i>Current Sources</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#btabs-alt-static-justified-new"></i>New Funding Source</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="block-content tab-content">
+                                                                    <div class="tab-pane active" id="btabs-alt-static-justified-current">
+                                                                        <!-- Default Table -->
+                                                                        <div class="block">
+                                                                            <div class="block-header">
+                                                                            </div>
+                                                                            <div class="block-content">
+                                                                                <table class="table">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th style="width: 15%;">Name</th>
+                                                                                            <th>Account</th>
+                                                                                            <th>Routing</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td >Jane Smith</td>
+                                                                                            <td >ACH *************1234</td>
+                                                                                            <td>456292385</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!-- END Default Table -->
+                                                                    </div>
+                                                                    <div class="tab-pane" id="btabs-alt-static-justified-new">
+                                                                        <div class="col-md-10">
+                                                                            <!-- Block Tabs Justified Alternative Style -->
+                                                                            <div class="block">
+                                                                                <ul class="nav nav-tabs nav-tabs-alt nav-justified" data-toggle="tabs">
+                                                                                    <li class="active">
+                                                                                        <a href="#ctabs-alt-static-justified-ach"> ACH</a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#ctabs-alt-static-justified-credit"> Credit Card</a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <div class="block-content tab-content">
+                                                                                    <div class="tab-pane active" id="ctabs-alt-static-justified-ach">
+                                                                                        <!-- Static Labels -->
+                                                                                        <div class="block">
+                                                                                            <div class="block-header">
+                                                                                                
+                                                                                            </div>
+                                                                                            <div class="block-content block-content-narrow">
+                                                                                                <form class="form-horizontal push-10-t" action="base_forms_elements_modern.html" method="post" onsubmit="return false;">
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="text" id="material-text" name="material-text" placeholder="Please enter the name of your bank">
+                                                                                                                <label for="material-text">Bank name</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="password" id="material-password" name="material-password" placeholder="Please enter your account number">
+                                                                                                                <label for="material-password">Account number</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-xs-12">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="email" id="material-email" name="material-email" placeholder="Please enter your routing number">
+                                                                                                                <label for="material-email">Routing Number</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- END Static Labels -->
+
+                                                                                    </div>
+                                                                                    <div class="tab-pane" id="ctabs-alt-static-justified-credit">
+                                                                                        <!-- Static Labels -->
+                                                                                        <div class="block">
+                                                                                            <div class="block-header">
+                                                                                                
+                                                                                            </div>
+                                                                                            <div class="block-content block-content-narrow">
+                                                                                                <form class="form-horizontal push-10-t" action="base_forms_elements_modern.html" method="post" onsubmit="return false;">
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="text" id="material-text" name="material-text" placeholder="As it appears on the front of the card">
+                                                                                                                <label for="material-text">Name on Card</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="password" id="material-password" name="material-password" placeholder="Please enter your card number">
+                                                                                                                <label for="material-password">Card number</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-xs-12">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="email" id="material-email" name="material-email" placeholder="MM/YY">
+                                                                                                                <label for="material-email">Expiration Date</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="password" id="material-password" name="material-password" placeholder="Street number and address">
+                                                                                                                <label for="material-password">Billing Address</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-xs-5">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="text" id="material-gridf" name="material-gridf" placeholder="city">
+                                                                                                                <label for="material-gridf">City</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-sm-3">
+                                                                                                            <div class="form-material">
+                                                                                                                <select class="form-control" id="material-select" name="material-select" size="1">
+                                                                                                                    <option value="1">AL</option>
+                                                                                                                    <option value="2">AK</option>
+                                                                                                                    <option value="3">AZ</option>
+                                                                                                                    <option value="4">AR</option>
+                                                                                                                    <option value="5">CA</option>
+                                                                                                                    <option value="6">CO</option>
+                                                                                                                    <option value="7">CT</option>
+                                                                                                                    <option value="8">DE</option>
+                                                                                                                    <option value="9">FL</option>
+                                                                                                                    <option value="10">GA</option>
+                                                                                                                    <option value="11">HI</option>
+                                                                                                                    <option value="12">ID</option>
+                                                                                                                    <option value="13">IL</option>
+                                                                                                                    <option value="14">IN</option>
+                                                                                                                    <option value="15">IA</option>
+                                                                                                                    <option value="16">KS</option>
+                                                                                                                    <option value="17">KY</option>
+                                                                                                                    <option value="18">LA</option>
+                                                                                                                    <option value="19">ME</option>
+                                                                                                                    <option value="20">MD</option>
+                                                                                                                    <option value="21">MA</option>
+                                                                                                                    <option value="22">MI</option>
+                                                                                                                    <option value="23">MN</option>
+                                                                                                                    <option value="24">MS</option>
+                                                                                                                    <option value="25">MO</option>
+                                                                                                                    <option value="26">MT</option>
+                                                                                                                    <option value="27">NE</option>
+                                                                                                                    <option value="28">NV</option>
+                                                                                                                    <option value="29">NH</option>
+                                                                                                                    <option value="30">NJ</option>
+                                                                                                                    <option value="31">NM</option>
+                                                                                                                    <option value="32">NY</option>
+                                                                                                                    <option value="33">NC</option>
+                                                                                                                    <option value="34">ND</option>
+                                                                                                                    <option value="35">OH</option>
+                                                                                                                    <option value="36">OK</option>
+                                                                                                                    <option value="37">OR</option>
+                                                                                                                    <option value="38">PA</option>
+                                                                                                                    <option value="39">RI</option>
+                                                                                                                    <option value="40">SC</option>
+                                                                                                                    <option value="41">SD</option>
+                                                                                                                    <option value="42">TN</option>
+                                                                                                                    <option value="43">TX</option>
+                                                                                                                    <option value="44">UT</option>
+                                                                                                                    <option value="45">VT</option>
+                                                                                                                    <option value="46">VA</option>
+                                                                                                                    <option value="47">WA</option>
+                                                                                                                    <option value="48">WV</option>
+                                                                                                                    <option value="49">WI</option>
+                                                                                                                    <option value="50">WY</option>
+                                                                                                                </select>
+                                                                                                                <label for="material-select">State</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="col-xs-3">
+                                                                                                            <div class="form-material">
+                                                                                                                <input class="form-control" type="text" id="material-gridl" name="material-gridl" placeholder="Zip">
+                                                                                                                <label for="material-gridl">Zip *</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-sm-9">
+                                                                                                            <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <!-- END Static Labels -->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- END Block Tabs Justified Default Style -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- END Block Tabs Justified Default Style -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- END Default Table -->
+                                                <div class="tab-pane" id="btabs-static-justified-notifications">
+                                                    <div class="container">
+                                                        <h4 class="block-header font-w300 bg-gray-lighter">Notifications</h4>
+                                                        <div class="row">
+
+                                                            <div class="col-sm-4">
+                                                                <p>Enable Email Notificaitons</p>
+                                                            </div>
+                                                            <div class="col-sm-2 col-sm-offset-6">
+                                                                <label class="css-input switch switch-default">
+                                                                    <input type="checkbox" checked><span></span> 
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <p>How often do you want to receive emails?</p>
+                                                            </div>
+                                                            <div class="form-group col-sm-2 col-sm-offset-5">
+                                                                <select class="form-control" id="material-select2" name="material-select2" size="1">
+                                                                    <option></option><!-- Empty value for demostrating material select box -->
+                                                                    <option value="1">Option #1</option>
+                                                                    <option value="2">Option #2</option>
+                                                                    <option value="3">Option #3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <p>Notifications for Payments</p>
+                                                            </div>
+                                                            <div class="col-sm-2 col-sm-offset-6">
+                                                                <label class="css-input switch switch-default">
+                                                                    <input type="checkbox" checked><span></span> 
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+                <div class="pull-right">
+                    
+                </div>
+                <div class="pull-left">
+                    <a class="font-w600" href="#" target="_blank">Company Name</a> &copy; <span class="js-year-copy"></span>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+
+        
+
+        <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <!-- Page Plugins -->
+        <script src="assets/js/plugins/slick/slick.min.js"></script>
+        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
+
+        <!-- Page JS Code -->
+        <script src="assets/js/pages/base_pages_dashboard.js"></script>
+        <script>
+            jQuery(function () {
+                // Init page helpers (Slick Slider plugin)
+                App.initHelpers('slick');
+            });
+        </script>
+    </body>
+</html>
