@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Invoices</title>
+    <title>Advisor Dashboard &amp; Advisor Dashboard</title>
 
-    <meta name="description" content="Advisor view of invoices">
+    <meta name="description" content="Advisor Dashboard">
     <meta name="author" content="">
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
@@ -48,7 +48,6 @@
     <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
     <!-- END Stylesheets -->
 </head>
 
@@ -100,16 +99,16 @@
                         <ul class="nav-main">
                             <li class="nav-main-heading"><span class="sidebar-mini-hide">General</span></li>
                             <li>
-                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="index.html"><span class="btn">Dashboard</span></a>
+                                <a class="active nav-submenu" data-toggle="base_tables_styles.html" href="#"><span class="btn">Dashboard</span></a>
                             </li>
                             <li>
-                                <a class="nav-submenu" data-toggle=" base_tables_styles.html" href="advisor_dashboard_clients.html"><span class="btn">Clients</span></a>
+                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_dashboard_clients.html"><span class="btn">Clients</span></a>
                             </li>
                             <li>
-                                <a class="active nav-submenu" data-toggle="base_tables_styles.html" href="#"><span class="btn">Invoices</span></a>
+                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_invoices.html"><span class="btn">Invoices</span></a>
                             </li>
                             <li>
-                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_plans.html"><span class="btn">Plans</span></a>
+                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisor_plans"><span class="btn">Plans</span></a>
                             </li>
                             <li class="nav-main-heading"><span class="sidebar-mini-hide">Transactions</span></li>
                             <li>
@@ -119,7 +118,7 @@
                                 <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisors_payments.html"><span class="btn">Payments</span></a>
                             </li>
                             <li>
-                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisors_reports.html"><span class="btn">Reports</span></a>
+                                <a class="nav-submenu" data-toggle="base_tables_styles.html" href="advisors_payments.html"><span class="btn">Reports</span></a>
                             </li>
                             <li class="nav-main-heading"><span class="sidebar-mini-hide">Account</span></li>
                             <li>
@@ -167,108 +166,129 @@
         </header>
         <!-- END Header -->
 
+
+
         <!-- Main Container -->
         <main id="main-container">
             <!-- Page Header -->
             <div class="content bg-image overflow-hidden" style="">
                 <div class="push-5-t push-5">
-                    <h1 class="h2 text-black animated zoomIn">Invoices</h1>
+                    <h1 class="h2 text-black animated zoomIn">Dashboard</h1>
                 </div>
-            </div>
-            <div>
-
-            </div>
-            <div>
-                <!-- Default Table -->
-                <div class="block">
-                    <div class="block-header">
-                    </div>
-                    <div class="block-content">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th class="text-center" style="width: 10%;">Number</th>
-                                    <th class="text-center" style="width:10%;">Amount</th>
-                                    <th style="width: 10%;">Client Name</th>
-                                    <th class="hidden-xs" style="width: 5%;">Generated</th>
-                                    <th style="width:10%;">Due Date</th>
-                                    <th class="text-center" style="width: 5%;">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text-center"><a href="advisor_invoices_view.html"><button class="btn btn-rounded btn-default" href="advisor_invoices_view.html">A45A751</button></a></td>
-                                    <td class="text-center">$1258.14</td>
-                                    <td>Judy Alvarez</td>
-                                    <td class="hidden-xs">
-                                        <span class="label label-success">Yes</span>
-                                    </td>
-                                    <td>10/12/2016</td>
-                                    <td class="text-center hidden-xs">
-                                        <span class="label label-warning">Pending</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"><a href="#"><button class="btn btn-rounded btn-default" href="#">B64U653</button></a></td>
-                                    <td class="text-center">$6337.87</td>
-                                    <td>Scott Ruiz</td>
-                                    <td class="hidden-xs">
-                                        <span class="label label-danger">No</span>
-                                    </td>
-                                    <td>10/15/2016</td>
-                                    <td class="text-center hidden-xs">
-                                        <span class="label label-warning">Pending</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"><a href="#"><button class="btn btn-rounded btn-default" href="#">D3633T21</button></a></td>
-                                    <td class="text-center">$512.95</td>
-                                    <td>Judy Alvarez</td>
-                                    <td class="hidden-xs">
-                                        <span class="label label-success">Yes</span>
-                                    </td>
-                                    <td>09/30/2016</td>
-                                    <td class="text-center hidden-xs">
-                                        <span class="label label-warning">Pending</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"><a href="#"><button class="btn btn-rounded btn-default" href="#">GF4342A7</button></a></td>
-                                    <td class="text-center">$855.74</td>
-                                    <td>Eric Lawson</td>
-                                    <td class="hidden-xs">
-                                        <span class="label label-success">Yes</span>
-                                    </td>
-                                    <td>08/21/2016</td>
-                                    <td class="text-center hidden-xs">
-                                        <span class="label label-danger">Overdue</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center"><a href="#"><button class="btn btn-rounded btn-default" href="#">FS238M47</button></a></td>
-                                    <td class="text-center">$412.11</td>
-                                    <td>Dennis Ross</td>
-                                    <td class="hidden-xs">
-                                        <span class="label label-success">Yes</span>
-                                    </td>
-                                    <td>07/06/2016</td>
-                                    <td class="text-center hidden-xs">
-                                        <span class="label label-danger">Overdue</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- END Default Table -->
             </div>
             <!-- END Page Header -->
 
             <!-- Page Content -->
+            <div class="content">
 
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- News -->
+                        <div class="block">
+                            <div class="block-header">
+                                <ul class="block-options">
+                                    <li>
+                                        <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                                    </li>
+                                </ul>
+                                <h3 class="block-title"> Notifications</h3>
+                            </div>
+                            <div class="block-content bg-gray-lighter">
+
+                            </div>
+                            <div class="block-content">
+                                <!-- Red Alerts -->
+                                <div class="alert alert-danger alert-dismissable">
+                                    <h2 class="font-w300 push-15">Alerts</h2>
+                                    <p>Invoice <a class="alert-link" href="advisor_invoices.html">GF4342A7</a> is 30 days overdue</p>
+                                    <p>Invoice <a class="alert-link" href="advisor_invoices.html">FS238M47</a> is 30 days overdue</p>
+                                </div>
+                                <!-- END Red Alerts -->
+                            </div>
+                            <div class="block-content bg-gray-lighter">
+
+                            </div>
+                            <div class="block-content">
+                                <!-- Yellow Alerts -->
+                                <div class="alert alert-warning alert-dismissable">
+                                    <h2 class="font-w300 push-15">Warning</h2>
+                                    <p>No new items needing your attention</p>
+                                </div>
+                                <!-- END Yellow Alerts -->
+                            </div>
+                            <div class="block-content bg-gray-lighter">
+
+                            </div>
+                            <div class="block-content">
+                                <!-- Success Alert -->
+                                <div class="alert alert-success alert-dismissable">
+                                    <h2 class="font-w300 push-15">Success</h2>
+                                    <p>You have a new client! <a class="alert-link" href="advisor_dashboard_clients.html">Donald Barnes</a> has started a trial account!</p>
+                                    <p>Transfer <a class="alert-link" href="advisor_transfers.html">complete</a>!</p>
+                                    <p><a class="alert-link" href="advisor_dashboard_clients.html">Jack Greene</a> has approved a reoccuring subscription!</p>
+                                </div>
+                                <!-- END Success Alert -->
+                            </div>
+                        </div>
+                        <!-- END News -->
+                    </div>
+                    <div class="col-lg-4">
+                        <!-- Content Grid -->
+                        <div class="content-grid">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <!-- Client Activity -->
+                                    <a class="block block-link-hover2" href="#">
+                                        <div class="block-header">
+                                            <h3 class="block-title text-center">Client Activity</h3>
+                                        </div>
+
+                                        <div class="block-content">
+                                            <!-- Notifications Widget -->
+                                            <div class="block block-bordered">
+                                                <div class="block-header">
+                                                    <ul class="block-options">
+                                                        <li>
+                                                            <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                                                        </li>
+                                                    </ul>
+                                                    <h3 class="block-title">Client Activity</h3>
+                                                </div>
+                                                <div class="block-content">
+                                                    <div class="pull-r-l pull-t push">
+                                                        <table class="block-table text-center bg-gray-lighter border-b">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="border-r">
+                                                                        <div class="h1 font-w700">1</div>
+                                                                        <div class="h5 text-muted text-uppercase push-5-t">New Notification</div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="alert alert-success">
+                                                        <p><a class="alert-link" href="advisors_payments.html">Judy Alvarez</a> just paid invoice A45A751</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END Notifications Widget -->
+                                        </div>
+                                    </a>
+                                    <!-- END Client Activity -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END Content Grid -->
+                    </div>
+                </div>
+            </div>
             <!-- END Page Content -->
         </main>
         <!-- END Main Container -->
+
+
+
 
         <!-- Footer -->
         <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
